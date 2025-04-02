@@ -3,7 +3,7 @@
     <!-- Home Page -->
     <url>
         <loc>http://visaservice.org.uk/</loc>
-        <lastmod>2024-03-20</lastmod>
+        <lastmod>2025-03-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -11,19 +11,19 @@
     <!-- Main Pages -->
     <url>
         <loc>http://visaservice.org.uk/about.html</loc>
-        <lastmod>2024-03-20</lastmod>
+        <lastmod>2025-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>http://visaservice.org.uk/contact.html</loc>
-        <lastmod>2024-03-20</lastmod>
+        <lastmod>2025-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>http://visaservice.org.uk/immigration-lawyers.html</loc>
-        <lastmod>2024-03-20</lastmod>
+        <lastmod>2025-03-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -31,37 +31,64 @@
     <!-- Visa Type Pages -->
     <url>
         <loc>http://visaservice.org.uk/usa-work-visas.html</loc>
-        <lastmod>2024-03-20</lastmod>
+        <lastmod>2025-03-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>http://visaservice.org.uk/schengen-visa.html</loc>
-        <lastmod>2024-03-20</lastmod>
+        <lastmod>2025-03-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
+
+    <!-- Schengen Visa Related Pages -->
+    <url>
+        <loc>http://visaservice.org.uk/schengen-visa-requirements.html</loc>
+        <lastmod>2025-03-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://visaservice.org.uk/best-time-schengen-visa.html</loc>
+        <lastmod>2025-03-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://visaservice.org.uk/schengen-visa-interview.html</loc>
+        <lastmod>2025-03-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://visaservice.org.uk/schengen-visa-processing.html</loc>
+        <lastmod>2025-03-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
     <url>
         <loc>http://visaservice.org.uk/student-visas.html</loc>
-        <lastmod>2024-03-20</lastmod>
+        <lastmod>2025-03-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>http://visaservice.org.uk/canada-pr.html</loc>
-        <lastmod>2024-03-20</lastmod>
+        <lastmod>2025-03-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>http://visaservice.org.uk/uk-work-visas.html</loc>
-        <lastmod>2024-03-20</lastmod>
+        <lastmod>2025-03-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>http://visaservice.org.uk/tourist-visas.html</loc>
-        <lastmod>2024-03-20</lastmod>
+        <lastmod>2025-03-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -69,13 +96,13 @@
     <!-- Legal Pages -->
     <url>
         <loc>http://visaservice.org.uk/privacy.html</loc>
-        <lastmod>2024-03-20</lastmod>
+        <lastmod>2025-03-20</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>http://visaservice.org.uk/terms.html</loc>
-        <lastmod>2024-03-20</lastmod>
+        <lastmod>2025-03-20</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
     </url>
@@ -83,13 +110,13 @@
     <!-- System Pages -->
     <url>
         <loc>http://visaservice.org.uk/404.html</loc>
-        <lastmod>2024-03-20</lastmod>
+        <lastmod>2025-03-20</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.1</priority>
     </url>
     <url>
         <loc>http://visaservice.org.uk/manifest.json</loc>
-        <lastmod>2024-03-20</lastmod>
+        <lastmod>2025-03-20</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.1</priority>
     </url>
