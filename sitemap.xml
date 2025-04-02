@@ -120,6 +120,38 @@
         <priority>0.9</priority>
     </url>
 
+    <!-- Dubai Visa Related Pages -->
+    <url>
+        <loc>http://visaservice.org.uk/dubai-tourist-visa.html</loc>
+        <lastmod>2025-03-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://visaservice.org.uk/dubai-visa-processing-time.html</loc>
+        <lastmod>2025-03-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://visaservice.org.uk/dubai-visa-fees.html</loc>
+        <lastmod>2025-03-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://visaservice.org.uk/dubai-visa-agents.html</loc>
+        <lastmod>2025-03-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://visaservice.org.uk/dubai-attractions.html</loc>
+        <lastmod>2025-03-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
     <!-- Legal Pages -->
     <url>
         <loc>http://visaservice.org.uk/privacy.html</loc>

@@ -36,6 +36,100 @@
     <!-- AdSense Code -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9773068853653447"
      crossorigin="anonymous"></script>
+    <style>
+        .document-checklist {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .checklist-item i {
+            margin-right: 10px;
+            color: #28a745;
+        }
+        .info-box {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+        .timeline-item {
+            padding: 15px;
+            margin: 10px 0;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #e9ecef;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            width: 10px;
+            height: 10px;
+            background: #2196f3;
+            border-radius: 50%;
+            transform: translateY(-50%);
+        }
+        .faq-section {
+            margin: 30px 0;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .faq-question {
+            padding: 15px;
+            background: #f8f9fa;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-answer {
+            padding: 15px;
+            display: none;
+        }
+        .faq-answer.show {
+            display: block;
+        }
+        .document-preview {
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            background: white;
+        }
+        .document-preview img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -79,131 +173,204 @@
             <!-- Main Content Area -->
             <div class="col-lg-8">
                 <article>
-                    <h1 class="mb-4">Schengen Visa Requirements 2024: Complete Guide</h1>
-                    <p class="lead">Everything you need to know about Schengen visa requirements and application process for 2024</p>
+                    <h1 class="mb-4">Schengen Visa Requirements 2024</h1>
+                    
+                    <div class="info-box">
+                        <h4><i class="fas fa-info-circle"></i> Quick Overview</h4>
+                        <p>The Schengen visa allows you to travel freely within the 27 Schengen countries for up to 90 days within a 180-day period. This guide covers all requirements for 2024.</p>
+                    </div>
 
-                    <div class="content">
-                        <section class="mb-4">
-                            <h2>What is a Schengen Visa?</h2>
-                            <p>A Schengen visa allows you to travel freely within the Schengen Area, which includes 27 European countries. This visa is essential for travelers from non-Schengen countries who wish to visit Europe for tourism, business, or other purposes.</p>
-                        </section>
+                    <section class="mb-4">
+                        <h2>Basic Requirements</h2>
+                        <div class="document-checklist">
+                            <div class="checklist-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Valid passport (valid for at least 3 months after intended return)</span>
+                            </div>
+                            <div class="checklist-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Completed visa application form</span>
+                            </div>
+                            <div class="checklist-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Recent passport-sized photos (not older than 6 months)</span>
+                            </div>
+                            <div class="checklist-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Travel insurance (minimum coverage €30,000)</span>
+                            </div>
+                            <div class="checklist-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Proof of accommodation</span>
+                            </div>
+                            <div class="checklist-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Proof of financial means</span>
+                            </div>
+                        </div>
+                    </section>
 
-                        <section class="mb-4">
-                            <h2>Basic Requirements</h2>
+                    <section class="mb-4">
+                        <h2>Financial Requirements</h2>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Country</th>
+                                        <th>Minimum Daily Amount</th>
+                                        <th>Total for 30 Days</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>France</td>
+                                        <td>€120</td>
+                                        <td>€3,600</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Germany</td>
+                                        <td>€45</td>
+                                        <td>€1,350</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Italy</td>
+                                        <td>€50</td>
+                                        <td>€1,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Spain</td>
+                                        <td>€100</td>
+                                        <td>€3,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="mb-4">
+                        <h2>Documentation Requirements</h2>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <h5>For Employed Applicants</h5>
+                                <ul>
+                                    <li>Employment contract</li>
+                                    <li>Last 3 months' salary slips</li>
+                                    <li>Bank statements (last 3 months)</li>
+                                    <li>Leave approval letter</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-item">
+                                <h5>For Self-Employed Applicants</h5>
+                                <ul>
+                                    <li>Business registration documents</li>
+                                    <li>Tax returns (last 3 years)</li>
+                                    <li>Bank statements (last 3 months)</li>
+                                    <li>Business financial statements</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-item">
+                                <h5>For Students</h5>
+                                <ul>
+                                    <li>Student ID card</li>
+                                    <li>Enrollment certificate</li>
+                                    <li>No objection letter from university</li>
+                                    <li>Sponsor's financial documents</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="mb-4">
+                        <h2>Travel Insurance Requirements</h2>
+                        <div class="document-preview">
+                            <h5>Required Coverage:</h5>
                             <ul>
-                                <li>Valid passport (with at least 6 months validity)</li>
-                                <li>Completed visa application form</li>
-                                <li>Recent passport-sized photos</li>
-                                <li>Travel insurance (minimum coverage €30,000)</li>
-                                <li>Proof of accommodation</li>
-                                <li>Travel itinerary</li>
-                                <li>Financial means proof</li>
-                                <li>Flight reservations</li>
+                                <li>Minimum coverage: €30,000</li>
+                                <li>Must cover all Schengen countries</li>
+                                <li>Must cover entire stay duration</li>
+                                <li>Must cover emergency medical expenses</li>
+                                <li>Must cover repatriation expenses</li>
                             </ul>
-                        </section>
+                        </div>
+                    </section>
 
-                        <section class="mb-4">
-                            <h2>Financial Requirements</h2>
-                            <p>You must demonstrate sufficient financial means to support yourself during your stay. The minimum amount varies by country but typically ranges from €50-100 per day of stay.</p>
+                    <section class="mb-4">
+                        <h2>Accommodation Proof</h2>
+                        <div class="document-preview">
+                            <h5>Accepted Documents:</h5>
                             <ul>
-                                <li>Bank statements (last 3-6 months)</li>
-                                <li>Salary slips</li>
-                                <li>Tax returns</li>
-                                <li>Sponsorship letter (if applicable)</li>
-                            </ul>
-                        </section>
-
-                        <section class="mb-4">
-                            <h2>Documentation Requirements</h2>
-                            <h3>For Employed Applicants</h3>
-                            <ul>
-                                <li>Employment contract</li>
-                                <li>Leave approval letter</li>
-                                <li>Recent salary slips</li>
-                                <li>Bank statements</li>
-                            </ul>
-
-                            <h3>For Self-Employed Applicants</h3>
-                            <ul>
-                                <li>Business registration documents</li>
-                                <li>Tax returns</li>
-                                <li>Bank statements</li>
-                                <li>Business license</li>
-                            </ul>
-
-                            <h3>For Students</h3>
-                            <ul>
-                                <li>Enrollment certificate</li>
-                                <li>Student ID</li>
-                                <li>Financial support proof</li>
-                                <li>Academic records</li>
-                            </ul>
-                        </section>
-
-                        <section class="mb-4">
-                            <h2>Travel Insurance Requirements</h2>
-                            <p>Your travel insurance must meet these criteria:</p>
-                            <ul>
-                                <li>Minimum coverage of €30,000</li>
-                                <li>Valid for entire Schengen Area</li>
-                                <li>Coverage for medical emergencies</li>
-                                <li>Repatriation coverage</li>
-                                <li>Valid for entire stay duration</li>
-                            </ul>
-                        </section>
-
-                        <section class="mb-4">
-                            <h2>Accommodation Proof</h2>
-                            <p>You must provide proof of accommodation for your entire stay:</p>
-                            <ul>
-                                <li>Hotel bookings</li>
-                                <li>Hostel reservations</li>
+                                <li>Hotel booking confirmation</li>
+                                <li>Rental agreement</li>
                                 <li>Invitation letter from host</li>
                                 <li>Property ownership proof</li>
                             </ul>
-                        </section>
+                        </div>
+                    </section>
 
-                        <section class="mb-4">
-                            <h2>Application Process</h2>
-                            <ol>
-                                <li>Determine visa type and requirements</li>
-                                <li>Complete application form</li>
-                                <li>Gather required documents</li>
-                                <li>Schedule appointment</li>
-                                <li>Submit application</li>
-                                <li>Pay visa fee</li>
-                                <li>Attend biometric appointment</li>
-                                <li>Wait for processing</li>
-                            </ol>
-                        </section>
+                    <section class="mb-4">
+                        <h2>Application Process Timeline</h2>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <h5>Step 1: Document Collection</h5>
+                                <p>Gather all required documents (1-2 weeks)</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h5>Step 2: Application Submission</h5>
+                                <p>Submit application at visa center (1 day)</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h5>Step 3: Processing</h5>
+                                <p>Visa processing (15-30 days)</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h5>Step 4: Collection</h5>
+                                <p>Collect passport with visa (1 day)</p>
+                            </div>
+                        </div>
+                    </section>
 
-                        <section class="mb-4">
-                            <h2>Visa Fees</h2>
-                            <p>Standard Schengen visa fees for 2024:</p>
+                    <section class="faq-section">
+                        <h2>Frequently Asked Questions</h2>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h5>How long can I stay with a Schengen visa?</h5>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>A Schengen visa allows you to stay in the Schengen area for up to 90 days within a 180-day period.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h5>Can I extend my Schengen visa?</h5>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Extensions are possible only in exceptional cases and must be requested before the visa expires.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h5>Which country should I apply to?</h5>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>You should apply to the country where you will spend the longest time, or the first country you will enter if staying equal time in multiple countries.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="mb-4">
+                        <h2>Recent Changes for 2024</h2>
+                        <div class="info-box">
                             <ul>
-                                <li>Adult applicants: €80</li>
-                                <li>Children (6-12 years): €40</li>
-                                <li>Children under 6: Free</li>
+                                <li>New digital visa application system being implemented</li>
+                                <li>Updated financial requirements for certain countries</li>
+                                <li>Enhanced security measures at visa centers</li>
+                                <li>New biometric data collection requirements</li>
                             </ul>
-                        </section>
-
-                        <section class="mb-4">
-                            <h2>Common Mistakes to Avoid</h2>
-                            <ul>
-                                <li>Incomplete documentation</li>
-                                <li>Insufficient financial proof</li>
-                                <li>Invalid travel insurance</li>
-                                <li>Incorrect application form</li>
-                                <li>Missing required signatures</li>
-                                <li>Insufficient passport validity</li>
-                            </ul>
-                        </section>
-
-                        <section class="mb-4">
-                            <h2>Recent Changes for 2024</h2>
-                            <p>Stay updated with the latest changes in Schengen visa requirements and application process for 2024.</p>
-                        </section>
-                    </div>
+                        </div>
+                    </section>
                 </article>
             </div>
 
@@ -293,6 +460,31 @@
          data-full-width-responsive="true"></ins>
     <script>
          (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    <script>
+        // FAQ Toggle Functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                // Toggle answer visibility
+                answer.classList.toggle('show');
+                
+                // Rotate icon
+                icon.style.transform = answer.classList.contains('show') 
+                    ? 'rotate(180deg)' 
+                    : 'rotate(0deg)';
+                
+                // Close other answers
+                document.querySelectorAll('.faq-answer').forEach(otherAnswer => {
+                    if (otherAnswer !== answer && otherAnswer.classList.contains('show')) {
+                        otherAnswer.classList.remove('show');
+                        otherAnswer.previousElementSibling.querySelector('i').style.transform = 'rotate(0deg)';
+                    }
+                });
+            });
+        });
     </script>
 </body>
 </html> 
