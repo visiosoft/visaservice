@@ -1,0 +1,89 @@
+/* Custom Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Card Styles */
+.card {
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Ad Placeholder */
+.ad-placeholder {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: auto;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    transition: opacity 0.3s ease;
+}
+
+.social-links a:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Custom Button Styles */
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    padding: 0.5rem 1.5rem;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+/* List Styles */
+.list-unstyled li {
+    margin-bottom: 0.5rem;
+}
+
+.list-unstyled a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.list-unstyled a:hover {
+    color: #0d6efd !important;
+} 
