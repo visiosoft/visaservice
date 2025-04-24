@@ -152,6 +152,34 @@
         <priority>0.8</priority>
     </url>
 
+    <!-- Luxembourg Visa Related Pages -->
+    <url>
+        <loc>http://visaservice.org.uk/luxembourg-visa.html</loc>
+        <lastmod>2025-03-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://visaservice.org.uk/luxembourg-work-visa.html</loc>
+        <lastmod>2025-03-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://visaservice.org.uk/luxembourg-student-visa.html</loc>
+        <lastmod>2025-03-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Saudi Arabia Visa Related Pages -->
+    <url>
+        <loc>http://visaservice.org.uk/saudi-visa.html</loc>
+        <lastmod>2025-03-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
     <!-- Legal Pages -->
     <url>
         <loc>http://visaservice.org.uk/privacy.html</loc>
