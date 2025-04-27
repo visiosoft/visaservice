@@ -36,6 +36,15 @@
             object-fit: cover;
             object-position: center;
         }
+        .animate-img {
+            opacity: 0;
+            transform: scale(0.95);
+            transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .animate-img.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
     </style>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -52,6 +61,19 @@
   window.ezstandalone = window.ezstandalone || {};
   ezstandalone.cmd = ezstandalone.cmd || [];
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const imgs = document.querySelectorAll('img.animate-img');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+  imgs.forEach(img => observer.observe(img));
+});
+</script>
 </head>
 <body>
     <!-- Header -->
@@ -59,7 +81,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="logo/visaguide.png" alt="Visa Guide Logo" height="40">
+                    <img src="logo/visaguide.png" alt="Visa Guide Logo" height="40" class="animate-img">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
@@ -124,7 +146,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="https://i.pinimg.com/736x/67/8a/36/678a36fa96da554f88f687c6d35eb94c.jpg" alt="Immigration Guide" class="img-fluid rounded shadow">
+                    <img src="https://i.pinimg.com/736x/67/8a/36/678a36fa96da554f88f687c6d35eb94c.jpg" alt="Immigration Guide" class="img-fluid rounded shadow animate-img">
                 </div>
             </div>
         </div>
@@ -158,7 +180,7 @@
                 <!-- USA Work Visas -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100">
-                        <img src="https://technofaq.org/wp-content/uploads/2019/09/Important-Information-About-Immigration-Policies.jpg" class="card-img-top" alt="USA Work Visas">
+                        <img src="https://technofaq.org/wp-content/uploads/2019/09/Important-Information-About-Immigration-Policies.jpg" class="card-img-top animate-img" alt="USA Work Visas">
                         <div class="card-body">
                             <h5 class="card-title">USA Work Visas</h5>
                             <p class="card-text">Complete guide to H1B visa processing time and requirements for 2024.</p>
@@ -169,7 +191,7 @@
                 <!-- Schengen Visa -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100">
-                        <img src="https://th.bing.com/th/id/OIP.IDaOBQ6xH7BfyHWcr-ggIQHaEK?rs=1&pid=ImgDetMain" class="card-img-top" alt="Schengen Visa">
+                        <img src="https://th.bing.com/th/id/OIP.IDaOBQ6xH7BfyHWcr-ggIQHaEK?rs=1&pid=ImgDetMain" class="card-img-top animate-img" alt="Schengen Visa">
                         <div class="card-body">
                             <h5 class="card-title">Schengen Visa</h5>
                             <p class="card-text">Step-by-step guide to obtaining a Schengen visa from Pakistan.</p>
@@ -180,7 +202,7 @@
                 <!-- Student Visas -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100">
-                        <img src="https://th.bing.com/th/id/OIP.YJzJbNuw9ou_kbolu8l6aAHaEK?rs=1&pid=ImgDetMain" class="card-img-top" alt="Student Visas">
+                        <img src="https://th.bing.com/th/id/OIP.YJzJbNuw9ou_kbolu8l6aAHaEK?rs=1&pid=ImgDetMain" class="card-img-top animate-img" alt="Student Visas">
                         <div class="card-body">
                             <h5 class="card-title">Student Visas</h5>
                             <p class="card-text">Comprehensive guide to F1 visa interview questions and requirements.</p>
@@ -191,7 +213,7 @@
                 <!-- Canada PR -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100">
-                        <img src="https://th.bing.com/th/id/R.6942742f70f2bf543bbeb18c9afce905?rik=%2bnIzG6R%2bk45EbQ&pid=ImgRaw&r=0" class="card-img-top" alt="Canada PR">
+                        <img src="https://th.bing.com/th/id/R.6942742f70f2bf543bbeb18c9afce905?rik=%2bnIzG6R%2bk45EbQ&pid=ImgRaw&r=0" class="card-img-top animate-img" alt="Canada PR">
                         <div class="card-body">
                             <h5 class="card-title">Canada PR</h5>
                             <p class="card-text">Express Entry points calculator and comprehensive guide to Canadian PR.</p>
@@ -202,7 +224,7 @@
                 <!-- UK Work Visas -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100">
-                        <img src="pic/UK work visa.jpg" alt="UK Work Visas">
+                        <img src="pic/UK work visa.jpg" alt="UK Work Visas" class="animate-img">
                         <div class="card-body">
                             <h5 class="card-title">UK Work Visas</h5>
                             <p class="card-text">Complete guide to UK Skilled Worker Visa requirements and process.</p>
@@ -213,7 +235,7 @@
                 <!-- Tourist Visas -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100">
-                        <img src="pic/passport-3127925.jpg" class="card-img-top" alt="Tourist Visas">
+                        <img src="pic/passport-3127925.jpg" class="card-img-top animate-img" alt="Tourist Visas">
                         <div class="card-body">
                             <h5 class="card-title">Tourist Visas</h5>
                             <p class="card-text">Guide to Dubai tourist visa requirements for Pakistani citizens.</p>
@@ -224,7 +246,7 @@
                 <!-- Luxembourg Work Visa -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100">
-                        <img src="pic/Luxembourg Work Visa pic.jpg" class="card-img-top" alt="Luxembourg Work Visa">
+                        <img src="pic/Luxembourg Work Visa pic.jpg" class="card-img-top animate-img" alt="Luxembourg Work Visa">
                         <div class="card-body">
                             <h5 class="card-title">Luxembourg Work Visa</h5>
                             <p class="card-text">Complete guide to working in Luxembourg and obtaining a work visa.</p>
@@ -235,7 +257,7 @@
                 <!-- Luxembourg Student Visa -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100">
-                        <img src="https://th.bing.com/th/id/OIP.YJzJbNuw9ou_kbolu8l6aAHaEK?rs=1&pid=ImgDetMain" class="card-img-top" alt="Luxembourg Student Visa">
+                        <img src="https://th.bing.com/th/id/OIP.YJzJbNuw9ou_kbolu8l6aAHaEK?rs=1&pid=ImgDetMain" class="card-img-top animate-img" alt="Luxembourg Student Visa">
                         <div class="card-body">
                             <h5 class="card-title">Luxembourg Student Visa</h5>
                             <p class="card-text">Comprehensive guide to studying in Luxembourg and student visa requirements.</p>
@@ -246,7 +268,7 @@
                 <!-- Australia Work Visas -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100">
-                        <img src="pic/Australia Work Visas pic.jpg" class="card-img-top" alt="Australia Work Visas">
+                        <img src="pic/Australia Work Visas pic.jpg" class="card-img-top animate-img" alt="Australia Work Visas">
                         <div class="card-body">
                             <h5 class="card-title">Australia Work Visas</h5>
                             <p class="card-text">Complete guide to Australian work visas including TSS, Skilled Independent, and Working Holiday visas.</p>
@@ -258,7 +280,7 @@
                 <!-- New Zealand Work Visas -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100">
-                        <img src="pic/New Zealand Work Visas.jpg" class="card-img-top" alt="New Zealand Work Visas">
+                        <img src="pic/New Zealand Work Visas.jpg" class="card-img-top animate-img" alt="New Zealand Work Visas">
                         <div class="card-body">
                             <h5 class="card-title">New Zealand Work Visas</h5>
                             <p class="card-text">Comprehensive guide to NZ work visas including Essential Skills and Skilled Migrant visas.</p>
@@ -270,7 +292,7 @@
                 <!-- Schengen Work Visas -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100">
-                        <img src="pic/Schengen Work Visas  pic.jpg" class="card-img-top" alt="Schengen Work Visas">
+                        <img src="pic/Schengen Work Visas  pic.jpg" class="card-img-top animate-img" alt="Schengen Work Visas">
                         <div class="card-body">
                             <h5 class="card-title">Schengen Work Visas</h5>
                             <p class="card-text">Complete guide to EU Blue Card, Work Permit, and other Schengen work visas.</p>
@@ -282,7 +304,7 @@
                 <!-- Japan Work Visas -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100">
-                        <img src="pic/Japan Work Visas pic.jpg" class="card-img-top" alt="Japan Work Visas">
+                        <img src="pic/Japan Work Visas pic.jpg" class="card-img-top animate-img" alt="Japan Work Visas">
                         <div class="card-body">
                             <h5 class="card-title">Japan Work Visas</h5>
                             <p class="card-text">Comprehensive guide to Japanese work visas including Engineer and Specialist visas.</p>
@@ -294,7 +316,7 @@
                 <!-- Singapore Work Visas -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100">
-                        <img src="pic/Singapore Work Visas pic.jpg" class="card-img-top" alt="Singapore Work Visas">
+                        <img src="pic/Singapore Work Visas pic.jpg" class="card-img-top animate-img" alt="Singapore Work Visas">
                         <div class="card-body">
                             <h5 class="card-title">Singapore Work Visas</h5>
                             <p class="card-text">Complete guide to Singapore work visas including Employment Pass and S Pass.</p>
@@ -306,7 +328,7 @@
                 <!-- South Korea Work Visas -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100">
-                        <img src="pic/South Korea Work Visas.jpg" class="card-img-top" alt="South Korea Work Visas">
+                        <img src="pic/South Korea Work Visas.jpg" class="card-img-top animate-img" alt="South Korea Work Visas">
                         <div class="card-body">
                             <h5 class="card-title">South Korea Work Visas</h5>
                             <p class="card-text">Comprehensive guide to Korean work visas including E-7 and E-9 visas.</p>
@@ -318,7 +340,7 @@
                 <!-- Hong Kong Work Visas -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100">
-                        <img src="pic/Hong Kong Work Visas pic.jpg" class="card-img-top" alt="Hong Kong Work Visas">
+                        <img src="pic/Hong Kong Work Visas pic.jpg" class="card-img-top animate-img" alt="Hong Kong Work Visas">
                         <div class="card-body">
                             <h5 class="card-title">Hong Kong Work Visas</h5>
                             <p class="card-text">Complete guide to HK work visas including GEP, QMAS, and ASMTP visas.</p>
@@ -330,11 +352,35 @@
                 <!-- Taiwan Work Visas -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100">
-                        <img src="pic/Taiwan Work Visas.jpg" class="card-img-top" alt="Taiwan Work Visas">
+                        <img src="pic/Taiwan Work Visas.jpg" class="card-img-top animate-img" alt="Taiwan Work Visas">
                         <div class="card-body">
                             <h5 class="card-title">Taiwan Work Visas</h5>
                             <p class="card-text">Comprehensive guide to Taiwan work visas including Employment Gold Card and Work Permit.</p>
                             <a href="taiwan-work-visas.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- France Work Viza -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="pic/france.jpg" class="card-img-top animate-img" alt="France Work Viza">
+                        <div class="card-body">
+                            <h5 class="card-title">France Work Visas</h5>
+                            <p class="card-text">Comprehensive guide to obtaining a work visa for France, including requirements and application process.</p>
+                            <a href="france-work-viza.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Italy Study Visas -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="pic/italy studu visas.jpg" class="card-img-top animate-img" alt="Italy Study Visas">
+                        <div class="card-body">
+                            <h5 class="card-title">Italy Study Visas</h5>
+                            <p class="card-text">Complete guide to obtaining a study visa for Italy, including requirements and application process.</p>
+                            <a href="italy-study-visas.html" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -373,7 +419,7 @@
                     <a href="immigration-lawyers.html" class="btn btn-primary mt-3">Find a Lawyer</a>
                 </div>
                 <div class="col-lg-6">
-                    <img src="https://i.pinimg.com/736x/0d/d7/6a/0dd76a7e3a6f315a6809a27c9438f3c2.jpg" alt="Immigration Lawyers" class="img-fluid rounded shadow">
+                    <img src="https://i.pinimg.com/736x/0d/d7/6a/0dd76a7e3a6f315a6809a27c9438f3c2.jpg" alt="Immigration Lawyers" class="img-fluid rounded shadow animate-img">
                 </div>
             </div>
         </div>
